@@ -16,13 +16,52 @@
           <p class="lead">Make Selection: </p>
           <form id="new-ticket">
 
-
+            <div class="movieTitle">
+              <h3>Pick a movie:</h3>
+              <select name="movieTitle" id="movieTitle">
+                  <option></option>
+                  <option value="Star Wars - 'The Force Awakens'">Star Wars - "The Force Awakens"</option>
+                  <option value="The Hateful Eight">The Hateful Eight</option>
+                  <option value="The Revenant">The Revenant</option>
+                  <option value="The Ride Along 2">The Ride Along 2</option>
+              </select>
+            </div>
+            <div class="movieTime">
+              <h3>Pick a time:</h3>
+              <select name="movieTime" id="movieTime">
+                  <option></option>
+                  <option value="3:00 PM">3:00 PM</option>
+                  <option value="6:00 PM">6:00 PM</option>
+                  <option value="9:00 PM">9:00 PM</option>
+                  <option value="12:00 AM">12:00 AM</option>
+              </select>
+            </div>
+            <div class="age">
+              <h3>Pick a time:</h3>
+              <select name="age" id="age">
+                  <option></option>
+                  <option value="general">General admission</option>
+                  <option value="youth">Age 10 or younger</option>
+                  <option value="senior">Age 65 or older</option>
+              </select>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Preview purchase: </button>
           </form>
+          </form>
+        </div>
+        <!-- end of form, start of display -->
+        <div class="col-md-6">
+         <div class="ticketDisplay">
+           <h3>Your ticket details: </h3>
+             <ul id="ticketList">
 
-          <div class="col-md-6">
+             </ul>
+           <h3>The price of your ticket is: </h3>
+             <ul id="ticketPrice">
 
-
-          </div>
+             </ul>
+         </div>
         </div>
       </div>
     </div>
