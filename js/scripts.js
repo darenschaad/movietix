@@ -44,6 +44,11 @@ $(document).ready(function (){
     var inputtedAge = $("select#age").val();
     var movieTicket = new Ticket(inputtedMovie, inputtedTime, inputtedAge);
 
+    // $("select#movieTitle").val("");
+    // $("select#movieTime").val("");
+    // $("select#age").val("");
+
+
     $("ul#ticketList").append("<li><span class='ticket'>" + movieTicket.fullTicket() + "</span></li>");
 
     $("ul#ticketPrice").append("<li><span class='price'>" + movieTicket.displayPrice() + "</span></li>");
